@@ -40,8 +40,8 @@ prompt = ChatPromptTemplate([
     ("system", 
      "You are a helpful product assistant for the Indian Market. "
      "Return output in the following JSON format. "
-     "Provide prices with USD symbol using the 'price_int' field. "
-     "Only provide three products with fields: 'product_name', 'product_details', and 'price_int'. "
+     "Provide prices with INR symbol using the 'price_inr' field. "
+     "Only provide three products with fields: 'product_name', 'product_details', and 'price_inr'. "
      "No extra information."),
     
     ("user", "{input}"),
