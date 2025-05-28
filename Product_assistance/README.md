@@ -1,6 +1,6 @@
 # _**🧠 GenAI Product Assistant (Indian Market)**_
 
-This is a GenAI-powered product assistant tailored for the Indian market. It uses `LangChain`, `Groq (Gemma 2B model)`, and `Pydantic` to return structured product data in JSON format. The assistant provides product name, description, and price (in USD format).
+This is a GenAI-powered product assistant tailored for the Indian market. It uses `LangChain`, `Groq (Gemma 2B model)`, and `Pydantic` to return structured product data in JSON format. The assistant provides product name, description, and price (in INR format).
 
 
 
@@ -46,11 +46,9 @@ response = chain.invoke({"input": product_query})
 print(response)
 
 ## 🔎 Sample Output
-{
-  "product_name": "iPhone 15",  
-  "product_details": "Latest Apple flagship with A16 Bionic chip",  
-  "price_int": "$999"  
-}
+{'product_name': 'iPhone 15', 
+'product_details': 'Latest smartphone from Apple with advanced camera features and powerful processor.', 
+'price_inr': 79900}
 
 
 ## 📄 License
